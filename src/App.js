@@ -1,13 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import BlogPreview from "./components/BlogPreview";
-import Header from "./components/Header";
+import Navbar from "./components/travelJournal/Navbar";
+import BlogPreview from "./components/travelJournal/BlogPreview";
+import Header from "./components/travelJournal/Header";
 import data from "./data";
 
 function App() {
     const blogPrev = data.map((item) => {
-        return <BlogPreview item={item} />;
+        return (
+            <BlogPreview 
+                key={item.title}
+                item={item}
+            />
+            );
     });
 
     return (
