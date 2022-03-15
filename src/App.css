@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+/***************/
+
+section {
+    padding: 20px 10px;
+}
+
+.mainHeader {
+    background-color: #E7E9EB;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.mainHeader ul {
+    list-style-type: none;
+}
+
+.App > nav {
+    background-color: #F55A5A;
+    padding: 10px 5px;
+    color: #ffffff;
+}
+
+.blogs {
+    display: flex;
+    /* background-color: DodgerBlue; */
+    flex-direction: column;
+    align-items: center;
+    /* align-content: space-around; */
+    /* justify-content: center; */
+}
+.blog--preview {
+    display: flex;
+    flex-direction: row;
+}
+.blog--info {
+    justify-content: flex-start;
+}
+.blog--thumbnail {
+    width: 125px;
+    height: 168px;
+}
