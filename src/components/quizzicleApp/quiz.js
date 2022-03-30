@@ -16,8 +16,7 @@ export default function Quiz(props) {
     })
 
     return (
-        <div>
-            {props.errorMessage && <p className="quiz--error">{props.errorMessage}</p>}
+        <div className="quiz--main">
             {questions}
             {!props.showResult ?
                 props.quizQuestions.length > 0 ?
@@ -39,6 +38,7 @@ export default function Quiz(props) {
                     </button>
                 </div>
              }
+             {props.errorMessage && <p className="quiz--error">{props.errorMessage}</p>}
         </div>
     )
 }

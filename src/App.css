@@ -40,7 +40,7 @@
 /***************/
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'karla', 'inter';
     background-color: #E5E5E5;
 }
 
@@ -151,13 +151,29 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-image: url("./images/quiz/intro-page.png");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .quiz--start-button {
   color: #F5F7FB;
   background: #4D5B9E;
-  padding: 8px 42px;
-  border-radius: 10px;
+  padding: 13px 55px;
+  border-radius: 15px;
+  font-size: medium;
+}
+
+.quiz--main {
+  background-image: url("./images/quiz/questions.png");
+  /* height: 700px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 10%;
 }
 
 .quiz-question {
@@ -196,6 +212,7 @@ section {
   border-radius: 10px;
   display: flex;
   color: #D6DBF5;
+  font-size: medium;
 }
 
 .quiz-result-container {

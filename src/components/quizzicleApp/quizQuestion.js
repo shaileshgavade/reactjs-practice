@@ -24,7 +24,7 @@ export default function QuizQuestion(props) {
 
     return (
         <div className={(`quiz-question ${props.showResult ? "quiz-result":""}`).trim()}>
-            <h3>{he.decode(question.question)}</h3>
+            <h4>{he.decode(question.question)}</h4>
             <ul className="question-options">{options}</ul>
         </div>
     )
