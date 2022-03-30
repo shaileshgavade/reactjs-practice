@@ -3,6 +3,8 @@ import Navbar from "./components/travelJournal/Navbar";
 import BlogPreview from "./components/travelJournal/BlogPreview";
 import Header from "./components/travelJournal/Header";
 import data from "./data";
+import QuizzicleApp from "./components/quizzicleApp/quizzicleApp";
+import Start from "./components/quizzicleApp/start";
 
 function App() {
     const blogPrev = data.map((item) => {
@@ -17,10 +19,13 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <Navbar />
+            {/* <Navbar />
             <section className="blogs">
                 {blogPrev}
-            </section>
+            </section> */}
+
+            <QuizzicleApp />
+            
         </div>
     );
 }
