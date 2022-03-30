@@ -38,10 +38,10 @@ export default function QuizzicleApp() {
 		.then(res => res.json())
 		.then(data => {
 			setQuizQuestions(data.results.map(element => {
-				console.log(element)
 				return {
 					...element, 
-					selectedItem: ""
+					selectedItem: "",
+					options: [...element.incorrect_answers, element.correct_answer].sort(() => Math.random() - 0.5)
 				}
 			}))
 		})

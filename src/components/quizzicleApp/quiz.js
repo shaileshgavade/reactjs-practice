@@ -20,15 +20,17 @@ export default function Quiz(props) {
             {props.errorMessage && <p className="quiz--error">{props.errorMessage}</p>}
             {questions}
             {!props.showResult ?
-                <button 
-                    className="quiz--check-ans"
-                    onClick={props.checkAnswers}
-                >
-                    Check Answers
-                </button>
+                props.quizQuestions.length > 0 ?
+                        <button 
+                            className="quiz--check-ans"
+                            onClick={props.checkAnswers}
+                        >
+                            Check Answers
+                        </button>
+                    : ""
             :
                 <div className="quiz-result-container">
-                    <h4>You scored {props.ansCounts.correct}/{props.ansCounts.total} answers</h4>
+                    <h4>You scored {props.ansCounts.correct}/{props.ansCounts.total} {props.ansCounts.correct > 0 ? "answers" : "answer"}</h4>
                     <button 
                         className="quiz--restart"
                         onClick={props.restartQuiz}

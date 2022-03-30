@@ -5,7 +5,7 @@ import he from 'he'
 
 export default function QuizQuestion(props) {
     const question = props.question;
-    const opts = [...question.incorrect_answers, question.correct_answer]
+    const opts = question.options
 
     let options = opts.map((key, val) => {
         let correctClass = (key === question.correct_answer ? "option-correct" : "");
